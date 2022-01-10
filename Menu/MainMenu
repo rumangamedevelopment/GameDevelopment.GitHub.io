@@ -1,0 +1,24 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class MainMenu : MonoBehaviour
+{
+    public void PlayGame()
+    { 
+	//Switch Screen to the game 
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+    }
+    public void QuitGame()
+    { 
+	//End of Application
+        Application.Quit();
+    }
+
+    public void Options()
+    {
+	//Graphics and Sound Settings will appear
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+2);
+    }
+}
